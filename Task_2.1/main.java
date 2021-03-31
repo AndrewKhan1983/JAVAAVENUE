@@ -1,14 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-       String name = "Мама";
-       String act = "Мыла";
-       String thing = "Раму";
-        System.out.println(name+act+thing);
-        System.out.println(act+name+thing);
-        System.out.println(thing+name+act);
-        System.out.println(name+thing+act);
-        System.out.println(act+thing+act);
-        System.out.println(thing+act+name);
+        String[] pog = {"Мама", "Мыла", "Раму"};
+        for (int i = 0; i < pog.length; i++) {
+            for (int j = 0; j < pog.length; j++) {
+                for (int k = 0; k < pog.length; k++) {
+                    System.out.println(pog[i] + " " + pog[j] + " " + pog[k]);
 
-    }
+                }
+
+            }
+
+        }
+    }       
 }
