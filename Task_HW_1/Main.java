@@ -31,7 +31,9 @@ public class Main {
                 marriott.getRoomWithToilet();
             }else if (command.equals("shower")){
                 marriott.getRoomWithShower();
-            }
+            }else if (command.indexOf("place") ==0){
+                int place = Integer.parseInt(String.valueOf(command.charAt(6)));
+                marriott.getRoomsWithPlace(place);
 
         }
 
